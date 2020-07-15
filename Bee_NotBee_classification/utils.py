@@ -142,7 +142,7 @@ def read_beeNotBee_annotations_saves_labels(audiofilename, block_name,  blockSta
             
     except Exception as e1:
         print('unknown exception: '+str(e1))
-        quit
+        # quit
     
     
     return labels_th
