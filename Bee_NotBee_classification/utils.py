@@ -901,9 +901,9 @@ def get_features_from_samples(path_audio_samples, sample_ids, raw_feature, norma
         
         
         ##normalization here:
-        # if not normalization == 'NO':
-            # x_norm = featureMap_normalization_block_level(x, normalizationType = normalization) 
-        # else: x_norm = x
+        if not normalization == 'NO':
+            x_norm = featureMap_normalization_block_level(x, normalizationType = normalization) 
+        else: x_norm = x
         
         if high_level_features:
             # high level feature extraction:
